@@ -1,0 +1,6 @@
+# Vercel SPA Routing Configuration
+
+# This file ensures client-side routing works on Vercel
+# All routes will serve the index.html file for React Router to handle
+
+/*    /index.html   200
