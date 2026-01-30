@@ -9,7 +9,7 @@ import Footer from "./components/feature/Footer";
 function App() {
   return (
     <I18nextProvider i18n={i18n}>
-      <BrowserRouter basename={__BASE_PATH__}>
+      <BrowserRouter basename="/">
         <Header />
         <AppRoutes />
         <Footer />
