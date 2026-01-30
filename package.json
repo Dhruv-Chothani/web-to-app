@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node ./node_modules/vite/bin/vite.js build",
-    "preview": "vite preview"
+    "build": "npm run install:deps && node ./node_modules/vite/bin/vite.js build",
+    "preview": "vite preview",
+    "install:deps": "npm install --force"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "4.0.2",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
+    "@rollup/rollup-linux-x64-gnu": "^4.24.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react-swc": "^3.10.2",
